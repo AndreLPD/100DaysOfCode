@@ -1,3 +1,4 @@
+//Day 6/100 - Next Prime
 const num = 24;
 
 function nextPrime(num){
@@ -17,9 +18,7 @@ function nextPrime(num){
 
     function calcPrime(num){
         for (let i = 2; i < num; i++) {
-            if(num % i === 0) {
-                return false;
-            }
+            if(num % i === 0) return false;
         }
         return true
     }
